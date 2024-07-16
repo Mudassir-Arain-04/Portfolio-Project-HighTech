@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="white" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+                <li><a href="#Home"> Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="Images/portfolio-logo-black-and-white.png" alt=""></a></li>
+                <li class="HideOnMobile"><a href="#Home"> Home</a></li>
+                <li class="HideOnMobile"><a href="#About">About</a></li>
+                <li class="HideOnMobile"><a href="#Portfolio">Portfolio</a></li>
+                <li class="HideOnMobile"><a href="#Contact">Contact</a></li>
+                <li class="menubutton" onclick="ShowSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="white" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="Home">
+        <div class="main-div">
+            <div class="intro">
+                <h1> HELLO, I'M <br>
+                <span>Muhammad Mudassir</span></h1>
+                <h3>A FORNTEND DEVELOPER</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione nam sequi inventore.</p>
+            </div>
+            <div class="h-image">
+                <img src="Images/ai-generated-stylish-man-isolated-on-transparent-background-free-png (1).webp" alt="">
+            </div>
+        </div>
+        <div class="skills">
+            <h1>Skills</h1>
+            <div class="skill-section">
+                <div class="s-name">
+                    <h3>HTML</h3>
+                </div>
+                <div class="s-name">
+                    <h3>CSS</h3>
+                </div>
+                <div class="s-name">
+                    <h3>JAVASCRIPT</h3>
+                </div>
+                <div class="s-name">
+                    <h3>WORDPRESS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="About">
+        <div class="sec-name">
+            <h1>About</h1>
+        </div>
+        <div class="sub-sec">
+            <div class="sec-1">
+                <span>I am Muhammad Mudassir.</span>
+                <p> I am a Frontend Developer.
+                    I am 19 year's old I have completed my Intermediate from Govt: Boys degree college 
+                    Nawabshah and Now I am doing Undergraduation program in computer science Batch 2022. 
+                    Programing is my hobby and interest. I am expert in web development.
+                </p>
+                <div class="personal-info">
+                    <ul>
+                        <li><span>BirthDay:</span> 04-November-2004</li>
+                        <li><span>PhoneNo:</span> 0308-3065787</li>
+                        <li><span>City:</span> Nawabshah, Sindh, pakistan</li>
+                        <li><span>Email:</span> mmudassirarain04@gmail.com</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="sec-2">
+                <div class="edu">
+                    <h3>Matric</h3>
+                    <p>TCF School Nawabshah</p>
+                    <p>2018-2020</p>
+                </div>
+                <div class="edu">
+                    <h3>Intermediate</h3>
+                    <p>Govt: Boys Degree Collage Nawabshah</p>
+                    <p>2020-2022</p>
+                </div>
+                <div class="edu">
+                    <h3>Undergraduation</h3>
+                    <p>QUEST Nawabshah</p>
+                    <p>2022-2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Portfolio">
+        <div class="sec-name">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="project-sec">
+            <div class="project">
+                <div class="text">
+                    <h3>Sunny Side</h3>
+                    <p>Using HTML, CSS for this user friendly interface.</p>
+                </div>
+                <div class="pro-img">
+                    <img src="Images/Sunny Side webpage.png" alt="">
+
+                </div>
+            </div>
+            <div class="project">
+                <div class="text">
+                    <h3>SCO AND DIGITAL MARKETING AGENCY</h3>
+                    <p>HTML, CSS, JAVA Script using for user friendly interface.</p>
+                </div>
+                <div class="pro-img">
+                    <img src="Images/SCO agency webpage.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contact">
+        <div class="sec-name">
+            <h1>Contact</h1>
+        </div>
+        <div class="form-sec">
+            <form action="#">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject"><br><br>
+
+                <label for="massage">Massage:</label><br>
+                <textarea name="massage" id="massage"></textarea><br><br>
+
+            </form>
+                <button class="btn">Send Massage</button>
+        </div>
+        <div class="box">
+            <div class="location">
+                <img src="Images/icons8-location-48.png" alt="">
+                <h4>Nawabshah, Sindh, Pakistan</h4>
+            </div>
+            <div class="phone">
+                <img src="Images/icons8-phone-50.png" alt="">
+                <h4>0308-3065787</h4>
+            </div>
+            <div class="email">
+                <img src="Images/icons8-email-48.png" alt="">
+                <h4>mmudassirarain04@gmail.com</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        2024 &copy;Muhammad Mudassir All Rights Reserved.
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>

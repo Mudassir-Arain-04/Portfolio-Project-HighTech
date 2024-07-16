@@ -1,0 +1,470 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background:black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    background-color: #995a02;
+    /* border-bottom: 4px solid black; */
+    box-shadow: 3px 3px 5px #995a02;
+}
+nav img{
+    width: 140px;
+}
+nav ul{
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+li{
+    height: 100%;
+}
+li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 30px;
+    padding-top: 10px;
+    color: white;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-size: 20px;
+    font-weight: 500;
+}
+nav a:hover, 
+nav a:active{
+    color: black;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:rgba(153, 90, 2, 0.485);
+    backdrop-filter: blur(10px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menubutton{
+    display: none;
+}
+#Home{
+    /* margin-top: 60px; */
+    padding-top: 130px;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.intro h1{
+    font-size: 50px;
+}
+.intro h2{
+    font-size: 50px;
+}
+.intro span{
+    color: rgb(153, 90, 2);
+    font-size: 55px;
+}
+.h-image{
+    background: rgb(153, 90, 2);
+    border: 1px solid rgb(153, 90, 2) ;
+    border-radius: 50%;
+    display: block;
+}
+.h-image img{
+    border-radius: 50%;
+    width: 500px;
+}
+.skills{
+    margin-top: 35px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills h1{
+    text-align: center;
+    width: 40%;
+    font-size: 30px;
+    border-bottom: 4px solid rgb(153, 90, 2);
+}
+.skill-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:40px;
+    text-align: center;
+}
+.skill-section .s-name{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3d3d3d7f;
+    border: 2px solid #3d3d3d7f;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+}
+#About{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sec-name{
+    text-align: center;
+    width: 70%;
+    border-bottom: 4px solid rgb(153, 90, 2);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.sub-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sec-1{
+    background: #3d3d3d7f;
+    border: 2px solid #3d3d3d7f;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 60%;
+    padding: 20px;
+}
+.sec-1 span{
+    color: #995a02;
+    font-size: 30px;
+    font-weight: 600;
+}
+.sec-1 p{
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+.personal-info{
+    margin-top: 20px;
+}
+.personal-info ul li{
+    list-style: none;
+}
+.personal-info span{
+    color: #995a02;
+    font-size: 20px;
+}
+.sec-2{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.edu{
+    background: #3d3d3d7f;
+    border: 2px solid #3d3d3d7f;
+    border-radius: 10px;
+    width: 28%;
+    height: 150px;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.edu h3{
+    color: #995a02;
+    font-size: 20px;
+}
+#Portfolio{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.project-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.project{
+    background: #3d3d3d7f;
+    border: 2px solid #3d3d3d7f;
+    border-radius: 10px;
+    width: 38%;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    width: 47%;
+}
+.text h3{
+    color: #995a02;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.pro-img{
+    width: 50%;
+    height: 200px;
+    
+}
+.pro-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: top;
+}
+#Contact{
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form-sec{
+    background: #3d3d3d7f;
+    border: 2px solid #3d3d3d7f;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-sec input,
+.form-sec textarea{
+    width: 500px;
+}
+.form-sec input{
+    height: 25px;
+}
+.form-sec textarea{
+    height: 120px;
+}
+.form-sec .btn{
+    background: #995a02;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #000;
+    border: 2px solid #995a02;
+    transition: ease-in-out 0.3s;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+    height: 40%;
+}
+.box div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 200px;
+}
+.box div img{
+    margin-bottom: 15px;
+}
+footer{
+    text-align: center;
+    background:#995a02;
+}
+
+@media(max-width: 800px){
+    .HideOnMobile{
+        display: none;
+    }
+    .menubutton{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .intro{
+        /* margin-left: 20px; */
+        width: 50%;
+    }
+    .intro h1, .intro span {
+      font-size: 30px;
+    }
+    .h-image img{
+        width: 300px;
+    }
+    #About{
+        height: 130vh;
+    }
+    .sec-2 .edu{
+        margin: 10px;
+    }
+    #Contact{
+        height: 150vh;
+    }
+  }
+  @media only screen and (max-width: 769px) {
+    .skill-section {
+      flex-wrap: wrap;
+    }
+    .sec-1{
+        width: 80%;
+    }
+    .sec-2{
+        width: 80%;
+    }
+    #Portfolio{
+        height: 135vh;
+    }
+    .project-sec{
+        flex-direction: column;
+    }
+    .project{
+        width: 90%;
+    }
+    #Contact{
+        height: 200vh;
+    }
+    .form-sec{
+        width: 75%;
+    }
+    .form-sec input, .form-sec textarea{
+        width: 350px;
+    }.box{
+        flex-direction: column;
+    }
+    .box div{
+        width: 80%;
+        text-align: center;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    #Home{
+        height: 90vh;
+    }
+    .h-image{
+        display: none;
+    }
+    .main-div{
+        flex-direction: column;
+    }
+    .intro{
+        font-size: 13px;
+    }
+    .intro h1, .intro span{
+        font-size: 35px;
+    }
+    .intro h3{
+        font-size: 14px;
+    }
+    .intro p, .intro h3{
+        margin-top: 10px;
+    }
+    #About{
+        height: 135vh;
+    }
+    .sec-1{
+        width: 65%;
+    }
+    .personal-info span{
+        font-size: 17px;
+    }
+    .sec-2{
+        flex-wrap: wrap;
+    }
+    .sec-2 .edu{
+        width: 80%;
+    }
+    #Portfolio{
+        height: 93vh;
+    }
+    .project .pro-img{
+        width: 30%;
+    }
+    .project .text{
+        width: 65%;
+    }
+    #Contact{
+        height: 135vh;
+    }
+    .form-sec{
+        height: 500px;
+    }
+    .form-sec input, .form-sec textarea{
+        width: 230px;
+    }
+    .form-sec .btn{
+        width: 120px;
+    }
+  }
+  @media only screen and (max-width: 321px) {
+    .sec-1 .personal-info, .personal-info span{
+        font-size: 12px;
+    }
+    .form-sec{
+        height: 500px;
+    }
+    .box{
+        width: 80%;
+    }
+  }
